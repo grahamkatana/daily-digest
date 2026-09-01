@@ -1,0 +1,12 @@
+@repo = grahamkatana/daily-digest
+@date = 20260901
+
+### List all digests (returns download_url for each — click through from here)
+GET https://api.github.com/repos/{{repo}}/contents/digests
+Accept: application/vnd.github+json
+
+### Latest digest
+GET https://raw.githubusercontent.com/{{repo}}/main/digests/latest.md
+
+### A specific digest — edit @date above, then send this one
+GET https://raw.githubusercontent.com/{{repo}}/main/digests/digest_{{date}}.md

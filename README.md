@@ -100,9 +100,3 @@ That's a stable URL you (or a webhook) can poll daily after the Action runs.
 Sending it *to* a webhook automatically (instead of just being pollable) isn't
 wired up yet — when you're ready for that, `notify.py` is the natural place to
 add an HTTP POST of the same Markdown, right next to the ntfy call.
-
-## Note on the Apify token
-
-The Apify token lives in this repo's local `.env` (gitignored, not
-committed). Since it was shared in plaintext at one point, consider rotating
-it in the Apify console once this is set up.

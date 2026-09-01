@@ -1,0 +1,13 @@
+name: Test
+
+on:
+  push:
+
+jobs:
+  selfcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - run: uv sync
+      - run: uv run python -m digest.main --selfcheck

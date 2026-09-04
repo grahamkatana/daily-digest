@@ -1,6 +1,7 @@
 """CrossRef — DOI registry, broad journal coverage."""
 
 import time
+from datetime import date, timedelta
 
 import requests
 
@@ -8,10 +9,12 @@ from ..config import HEADERS, STRICT_YEAR
 from ..paper import is_reputable_venue, make_paper, matches_topic
 
 BASE = "https://api.crossref.org/works"
+LOOKBACK_DAYS = 4  # catches papers newly indexed since the last run, not just newly published
 
 
 def scrape(queries: list[str]) -> list[dict]:
     results = []
+    cutoff = (date.today() - timedelta(days=LOOKBACK_DAYS)).isoformat()
 
     for query in queries:
         print(f"  📖 CrossRef: '{query}'")
@@ -21,7 +24,9 @@ def scrape(queries: list[str]) -> list[dict]:
                 params={
                     "query": query,
                     "rows": 20,
-                    "filter": f"from-pub-date:{STRICT_YEAR},type:journal-article",
+                    "filter": f"from-pub-date:{STRICT_YEAR},type:journal-article,from-index-date:{cutoff}",
+                    "sort": "indexed",
+                    "order": "desc",
                     "select": "title,author,published,abstract,container-title,DOI,URL",
                     "mailto": "graykatanakenny@gmail.com",
                 },

@@ -1,6 +1,7 @@
 """OpenAlex — open scholarly graph, no API key needed."""
 
 import time
+from datetime import date, timedelta
 
 import requests
 
@@ -8,11 +9,13 @@ from ..config import HEADERS, STRICT_YEAR
 from ..paper import is_reputable_venue, make_paper, matches_topic
 
 BASE = "https://api.openalex.org/works"
+LOOKBACK_DAYS = 4  # catches papers newly indexed since the last run, not just newly published
 
 
 def scrape(queries: list[str]) -> list[dict]:
     results = []
-    base_filter = f"publication_year:{STRICT_YEAR}-,type:journal-article"
+    cutoff = (date.today() - timedelta(days=LOOKBACK_DAYS)).isoformat()
+    base_filter = f"publication_year:{STRICT_YEAR}-,type:journal-article,from_created_date:{cutoff}"
 
     for query in queries:
         print(f"  🔬 OpenAlex: '{query}'")

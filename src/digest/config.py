@@ -82,5 +82,4 @@ HEADERS = {"User-Agent": "ResearchDigestBot/1.0 (personal research digest)"}
 
 # Secrets / per-environment settings — set via .env locally, GitHub Actions secrets in CI.
 APIFY_API_TOKEN = os.getenv("APIFY_API_TOKEN", "")
-APIFY_SCHOLAR_ACTOR = "johnvc~google-scholar-lite-api"
 NTFY_TOPIC = os.getenv("NTFY_TOPIC", "graham_katana_research_digest_986712")

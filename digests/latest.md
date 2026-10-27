@@ -1,4 +1,4 @@
-# Research Digest — 13 October 2026
+# Research Digest — 27 October 2026
 
 **Papers found:** 1
 
@@ -6,9 +6,9 @@
 
 ## IEEE Access (1)
 
-### 1. From Draft-Then-Verify to Systems Co-Design: A Survey of Speculative Decoding for Autoregressive Large Language Models
+### 1. A Systematic Literature Review of Single-Cell Foundation Models for Transcriptomics: Design, Adaptation, Benchmarks, and Future Directions
 **Year:** 2026
 
-> Speculative decoding accelerates autoregressive large language model inference by producing low-cost draft work and committing accepted portions after parallel target-side verification. This draftthen- verify process defines the broad family, while recent methods differ in where draft work comes from, how candidate units are logically organized across drafting and verification, what fidelity claim licenses commitment, and how runtime systems realize committed state, control speculation, execute …
+> Large single-cell atlases have enabled reusable representation learning across tissues, diseases, platforms, and species. Single-cell foundation models (scFMs) build on these resources by learning cell- and gene-level representations from large-scale transcriptomic data. However, current scFMs vary substantially in input encoding, tokenization, backbone architecture, pre-training objective, biological prior knowledge, adaptation strategy, and evaluation protocol. Following the Preferred Reportin…
 
-🔗 http://ieeexplore.ieee.org/document/11719495
+🔗 http://ieeexplore.ieee.org/document/11740906

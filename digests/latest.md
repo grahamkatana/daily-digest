@@ -1,21 +1,14 @@
-# Research Digest — 10 November 2026
+# Research Digest — 11 November 2026
 
-**Papers found:** 2
+**Papers found:** 1
 
 ---
 
-## Empirical Software Engineering (Springer) (2)
+## IEEE Access (1)
 
-### 1. SysML behavior model generation with formal verification feedback leveraging large language models
+### 1. The Effect of Generative Artificial Intelligence on Software Engineering Productivity in the Software Industry
 **Year:** 2026
 
-> Background Model-driven development is widely used to engineer safety-critical systems, yet con-structing SysML behavior models manually remains labor-intensive and error-prone. Problem Although large language models have shown promise in code generation, their ability to pro-duce executable SysML v2 behavior models that satisfy requirement-derived formal properties remains insufficiently characterized. Even grammar-correct outputs may be behaviorally invalid. Method We present a bounded generat…
+> Generative Artificial Intelligence (GenAI) tools are being rapidly adopted in software engineering, but their true effect on productivity is not yet understood or studied empirically through sizeable data. To address this we present a large-scale, quantitative analysis of anonymized raw industrial data involving over 1400 participants from software industry, while including a control group for comparative analysis and spanning junior, medior, and senior roles. By evaluating two core productivity…
 
-🔗 https://link.springer.com/article/10.1007/s10664-026-10935-y
-
-### 2. CodeTransBenchmark: evaluating LLM-based code translation and repair across programming languages
-**Year:** 2026
-
-> Large Language Models (LLMs) pre-trained on expansive text and code corpora have revealed promising code generation abilities and have attracted increasing attention in code translation. In this work, we investigate the effectiveness of LLMs in code translation and translation error repair. First, we present CodeTransBenchmark, a framework for evaluating LLM-based translation and repair and devise a post-processing strategy to extract code from inconsistent LLM outputs. Then, we discuss an empir…
-
-🔗 https://link.springer.com/article/10.1007/s10664-026-10968-3
+🔗 http://ieeexplore.ieee.org/document/11769896

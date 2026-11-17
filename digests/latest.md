@@ -1,4 +1,4 @@
-# Research Digest — 11 November 2026
+# Research Digest — 17 November 2026
 
 **Papers found:** 1
 
@@ -6,9 +6,9 @@
 
 ## IEEE Access (1)
 
-### 1. The Effect of Generative Artificial Intelligence on Software Engineering Productivity in the Software Industry
+### 1. From Structural RTL Quality to Physical FPGA Performance: An Empirical Comparison of Zero-Shot LLM-Generated and Human-Designed Implementations
 **Year:** 2026
 
-> Generative Artificial Intelligence (GenAI) tools are being rapidly adopted in software engineering, but their true effect on productivity is not yet understood or studied empirically through sizeable data. To address this we present a large-scale, quantitative analysis of anonymized raw industrial data involving over 1400 participants from software industry, while including a control group for comparative analysis and spanning junior, medior, and senior roles. By evaluating two core productivity…
+> Large language models (LLMs) demonstrate the capability to generate syntactically correct and structurally compliant register-transfer level (RTL) designs. However, whether such digital code quality translates into efficient physical hardware remains an open question. This work investigates whether synthesis-independent RTL quality metrics remain informative for evaluating zero-shot LLM-generated FPGA designs. The study compares zero-shot LLM-generated designs with human implementations on a con…
 
-🔗 http://ieeexplore.ieee.org/document/11769896
+🔗 http://ieeexplore.ieee.org/document/11783357

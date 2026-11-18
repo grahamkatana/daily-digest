@@ -1,14 +1,15 @@
-# Research Digest — 17 November 2026
+# Research Digest — 18 November 2026
 
 **Papers found:** 1
 
 ---
 
-## IEEE Access (1)
+## CrossRef → ACM Transactions on Software Engineering and Methodology (1)
 
-### 1. From Structural RTL Quality to Physical FPGA Performance: An Empirical Comparison of Zero-Shot LLM-Generated and Human-Designed Implementations
+### 1. A Survey on Large Language Models for Code Generation
+**Authors:** Juyong Jiang, Fan Wang, Jiasi Shen, Sungju Kim, Sunghun Kim
 **Year:** 2026
 
-> Large language models (LLMs) demonstrate the capability to generate syntactically correct and structurally compliant register-transfer level (RTL) designs. However, whether such digital code quality translates into efficient physical hardware remains an open question. This work investigates whether synthesis-independent RTL quality metrics remain informative for evaluating zero-shot LLM-generated FPGA designs. The study compares zero-shot LLM-generated designs with human implementations on a con…
+> Large Language Models (LLMs) have garnered remarkable advancements across diverse code-related tasks, known as Code LLMs, particularly in code generation that generates source code with LLM from natural language descriptions. This burgeoning field has captured significant interest from both academic researchers and industry professionals due to its practical significance in software development, e.g., GitHub Copilot . Despite the active exploration of LLMs for a variety of code tasks, either fro…
 
-🔗 http://ieeexplore.ieee.org/document/11783357
+🔗 https://doi.org/10.1145/3747588
